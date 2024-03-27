@@ -3,19 +3,20 @@
 }
 
 #container {
-  max-width: 1000px;
-  height: 800px;
+  max-width: 900px;
+  height: 500px;
   position: relative;
   margin: auto;
 }
 
 img {
   width: 100%;
+  height: inherit;
 }
 
 .slide {
   display: none;
-  /* object-fit: cover; */
+  height: inherit;
 }
 
 .prev, .next {
@@ -36,4 +37,18 @@ img {
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
